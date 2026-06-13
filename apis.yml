@@ -1,0 +1,93 @@
+name: ENTSO-E
+description: >-
+  European Network of Transmission System Operators for Electricity (ENTSO-E)
+  provides the Transparency Platform REST API, a synchronous RESTful interface
+  for accessing pan-European electricity market data. The API delivers datasets
+  covering load forecasts, actual generation per type and per plant, installed
+  generation capacity, day-ahead prices, cross-border flows, scheduled exchanges,
+  transfer capacities, balancing data, hydro storage, outage information, and
+  congestion management data. Data is collected from Transmission System
+  Operators, power exchanges, and qualified third-party providers across Europe
+  in compliance with EU Regulation 543/2013.
+image: https://www.entsoe.eu/assets/images/entsoe-logo.png
+tags:
+  - Energy
+  - Electricity
+  - European Union
+  - Transparency
+  - Market Data
+  - Generation
+  - Transmission
+  - Load Forecasting
+  - Day-Ahead Prices
+  - Cross-Border Flows
+url: https://raw.githubusercontent.com/api-evangelist/entsoe/refs/heads/main/apis.yml
+specificationVersion: "0.19"
+apis:
+  - name: ENTSO-E Transparency Platform REST API
+    description: >-
+      Synchronous RESTful interface for accessing European electricity market
+      data including load, generation, transmission, balancing, outages,
+      congestion management, and system operations datasets. Authentication
+      requires a security token obtained by registering on the Transparency
+      Platform and emailing transparency@entsoe.eu. The API accepts GET requests
+      with query parameters and returns XML responses.
+    humanURL: https://transparency.entsoe.eu/
+    baseURL: https://web-api.tp.entsoe.eu/api
+    tags:
+      - Electricity Market Data
+      - Load Data
+      - Generation Data
+      - Transmission Data
+      - Balancing Data
+      - Day-Ahead Prices
+      - Cross-Border Flows
+    properties:
+      - type: Documentation
+        url: https://transparency.entsoe.eu/content/static_content/Static%20content/web%20api/Guide.html
+      - type: PostmanCollection
+        url: https://documenter.getpostman.com/view/7009892/2s93JtP3F6
+      - type: PythonClient
+        url: https://github.com/EnergieID/entsoe-py
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/entsoe/refs/heads/main/plans/plans.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/entsoe/refs/heads/main/rate-limits/rate-limits.yml
+      - type: FinOps
+        url: https://raw.githubusercontent.com/api-evangelist/entsoe/refs/heads/main/finops/finops.yml
+    contact:
+      - FN: ENTSO-E Transparency Platform Support
+        email: transparency@entsoe.eu
+    meta:
+      - key: authentication
+        value: API key (securityToken query parameter or Authorization Bearer header)
+      - key: format
+        value: XML (also ZIP for some datasets)
+      - key: registration
+        value: Free registration required at transparency.entsoe.eu; email transparency@entsoe.eu with subject "Restful API access"
+common:
+  - type: Website
+    url: https://www.entsoe.eu/
+  - type: TransparencyPlatform
+    url: https://transparency.entsoe.eu/
+  - type: Documentation
+    url: https://transparency.entsoe.eu/content/static_content/Static%20content/web%20api/Guide.html
+  - type: KnowledgeBase
+    url: https://transparencyplatform.zendesk.com/hc/en-us
+  - type: GitHubOrganization
+    url: https://github.com/EnergieID/entsoe-py
+  - type: PostmanDocumentation
+    url: https://documenter.getpostman.com/view/7009892/2s93JtP3F6
+  - type: Registration
+    url: https://transparency.entsoe.eu/usrm/user/createPublicUser
+  - type: Contact
+    url: https://www.entsoe.eu/contact/
+  - type: About
+    url: https://www.entsoe.eu/about/
+  - type: TermsOfService
+    url: https://transparency.entsoe.eu/content/static_content/Static%20content/web%20api/Guide.html
+  - type: Email
+    url: mailto:transparency@entsoe.eu
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com
