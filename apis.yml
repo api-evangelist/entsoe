@@ -66,6 +66,8 @@ apis:
       - key: registration
         value: Free registration required at transparency.entsoe.eu; email transparency@entsoe.eu with subject "Restful API access"
 common:
+  - type: DomainSecurity
+    url: security/entsoe-domain-security.yml
   - type: Website
     url: https://www.entsoe.eu/
   - type: TransparencyPlatform
