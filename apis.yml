@@ -9,6 +9,18 @@ description: >-
   congestion management data. Data is collected from Transmission System
   Operators, power exchanges, and qualified third-party providers across Europe
   in compliance with EU Regulation 543/2013.
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 image: https://www.entsoe.eu/assets/images/entsoe-logo.png
 tags:
   - Energy
